@@ -31,5 +31,21 @@
     }
 
     console.log(sum);
-    
+
+}
+
+{
+    // Task 4
+
+    const a = 5;
+
+    for (let i = 1; i <= a; i++) {
+        let sum = 0;
+
+        for (let j = 1; j <= i; j++) {
+            sum += j;
+        }
+        console.log(sum);
+    }
+
 }
