@@ -49,3 +49,15 @@
     }
 
 }
+
+{
+    // Task 5
+    
+    for (let i = 8; i <= 56; i++) {
+        if (i % 2 === 1) {
+            continue;
+        }
+        console.log(i);
+    }    
+
+}
