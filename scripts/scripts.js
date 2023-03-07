@@ -88,3 +88,28 @@
     console.log(`Конечное число = ${n}`);
     
 }
+
+{
+    // Task 8
+
+    let sum = 0;
+    let count = 0;
+
+     for (;;) {
+        let num = +prompt("Введите число!");  // + это преобразование к числу строки (+ = Number)
+        if (num === 0) {
+            alert("Операция завершена");
+            break;  //Выход из цикла
+        }
+        if (isNaN(num)) {
+            alert("Ошибка ввода");
+            continue;  //Завершение итерации
+        }
+        sum += num;
+        count++;
+     }
+
+     console.log(`Сумма чисел = ${sum}`);
+     console.log(`Среднее арифметическое = ${sum / count}`);
+     
+}
