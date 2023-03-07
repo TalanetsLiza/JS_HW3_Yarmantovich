@@ -69,7 +69,22 @@
         for (let j = 1; j <= 10; j++) {
             console.log(`${i} * ${j} = ${i * j}`);
         }
-        console.log("")
+        console.log("");
     }
+
+}
+
+{
+    // Task 7
+
+    let num = 0;
+    let n = 1000;
+
+    for (; n >= 50; n /= 2) {
+        num++;
+    }
+
+    console.log(`Количество итераций = ${num}`);
+    console.log(`Конечное число = ${n}`);
     
 }
