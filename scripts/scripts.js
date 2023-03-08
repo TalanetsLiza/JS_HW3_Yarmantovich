@@ -113,3 +113,32 @@
      console.log(`Среднее арифметическое = ${sum / count}`);
      
 }
+
+{
+    // Task 9
+
+    let numbersStr = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
+    let minNumber = Infinity;
+    let maxNumber = -Infinity;
+    let currentNumber = "";
+
+    for (let i = 0; i < numbersStr.length; i++) {
+        const char = numbersStr[i];
+        if (char !== " ") {
+            currentNumber += char;
+        } else {
+            if (+currentNumber > maxNumber) {
+                maxNumber = +currentNumber;
+            }
+            if (+currentNumber < minNumber) {
+                minNumber = +currentNumber;
+            }
+            
+            currentNumber = "";
+        }
+    }
+
+    console.log(`Максимальное число ${maxNumber}`);
+    console.log(`Минимальное число ${minNumber}`);
+
+}
