@@ -142,3 +142,24 @@
     console.log(`Минимальное число ${minNumber}`);
 
 }
+
+{
+    // Task 10
+
+    const n = 42456365;
+    const str = n.toString();
+	let sum = 0;
+    let reverse = "";
+
+    for (let i = 0; i < str.length; i++) {
+        const char = str[i];
+        console.log(char);
+
+        reverse = char + reverse;
+        sum += +char;
+    }
+
+    console.log(`Количество цифр в числе = ${str.length}`);
+    console.log(`Сумма цифр = ${sum}`);
+    console.log(`Обратный порядок чисел = ${reverse}`);
+}
